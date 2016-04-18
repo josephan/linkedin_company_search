@@ -4,8 +4,10 @@
 
 1. Install the required gems
 
-   `$ gem install linkedin`
-   `$ gem install dotenv`
+   ```
+   $ gem install linkedin
+   $ gem install dotenv
+   ```
 
 2. Create a dotenv file like so:
 
