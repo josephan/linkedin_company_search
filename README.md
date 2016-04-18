@@ -22,7 +22,6 @@
 5. Now run the script with the following arguments: name_of_company column_number_of_company_name
 
    Example
-
    `$ ruby linkedin_companies_search.rb file.csv 2`
 
 6. If you are running this script for the first time follow the instructions to save the access token, if you get an error saying that the token expired, then delete the third line of the .env file if there is one.
