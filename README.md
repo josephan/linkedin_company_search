@@ -21,13 +21,12 @@
 
 4. Make sure you have a CSV with the list of companies names in the same directory as the script
 
-5. Now run the script with the following arguments: name_of_company column_number_of_company_name
-
-   Example
-   `$ ruby linkedin_companies_search.rb file.csv 2`
+5. Now run the script! `$ ruby linkedin_companies_search.rb`
 
 6. If you are running this script for the first time follow the instructions to save the access token, if you get an error saying that the token expired, then delete the third line of the .env file if there is one.
 
-7. There should be a csv file in the same folder called `linkedin_scrape.csv`!
+7. Following the next instructions from the script (enter the name of the CSV file you want to parse and the column number where the companies' names are listed)
 
-8. Enjoy!
+8. There should be a csv file in the same folder called `linkedin_scrape.csv`!
+
+9. Enjoy!

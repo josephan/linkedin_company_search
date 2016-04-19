@@ -3,9 +3,6 @@ require 'csv'
 require 'dotenv'
 Dotenv.load
 
-filename, column_number = ARGV
-column_number = column_number.to_i
-
 # Instantiate a new LinkedIn client using OAuth from gem
 client = LinkedIn::Client.new(ENV["LINKEDIN_CLIENT_ID"], ENV["LINKEDIN_CLIENT_SECRET"])
 
@@ -30,6 +27,12 @@ else
 end
 
 fields = [{ companies: [:id, :name, :'website-url', :'employee-count-range', :'num-followers', :'founded-year'] }]
+
+print "Enter the name of the CSV file:"
+filename = gets.chomp
+
+print "Enter the column number with the name of the companies"
+column_number = gets.chomp.to_i
 
 array_of_companies = []
 CSV.foreach(filename) do |csv|
