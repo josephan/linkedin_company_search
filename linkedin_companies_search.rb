@@ -28,11 +28,11 @@ end
 
 fields = [{ companies: [:id, :name, :'website-url', :'employee-count-range', :'num-followers', :'founded-year'] }]
 
-print "Enter the name of the CSV file:"
+print "Enter the name of the CSV file: "
 filename = gets.chomp
 
-print "Enter the column number with the name of the companies"
-column_number = gets.chomp.to_i
+print "Enter the column number with the name of the companies: "
+column_number = gets.chomp.to_i - 1
 
 array_of_companies = []
 CSV.foreach(filename) do |csv|
